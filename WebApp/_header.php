@@ -1,13 +1,17 @@
 <?php
     $s_debug = '';
     // $s_debug = '?v=' . date("YmdHis");
-    if (!isset($a_head_css_add)) { $s_head_css_add = ''; } else { $s_head_css_add = '        ' . implode ("\n" . '        ', $a_head_css_add) . "\n"; }
-    if (!isset($a_head_js_add)) { $s_head_js_add = ''; } else { $s_head_js_add = '        ' . implode ("\n" . '        ', $a_head_js_add) . "\n"; }
-    if ($b_debug) {
-        $s_debug = '?'.microtime(true);
-        $s_head_css_add = str_replace('.css', '.css' . $s_debug, $s_head_css_add);
-        $s_head_js_add = str_replace('.js', '.js' . $s_debug, $s_head_js_add);
-    }
+if (!isset($a_head_css_add)) { $s_head_css_add = ''; 
+} else { $s_head_css_add = '        ' . implode("\n" . '        ', $a_head_css_add) . "\n"; 
+}
+if (!isset($a_head_js_add)) { $s_head_js_add = ''; 
+} else { $s_head_js_add = '        ' . implode("\n" . '        ', $a_head_js_add) . "\n"; 
+}
+if ($b_debug) {
+    $s_debug = '?'.microtime(true);
+    $s_head_css_add = str_replace('.css', '.css' . $s_debug, $s_head_css_add);
+    $s_head_js_add = str_replace('.js', '.js' . $s_debug, $s_head_js_add);
+}
 ?><!DOCTYPE HTML>
 <html lang="en">
     <head>
@@ -51,21 +55,20 @@
         <div class="container text_align_center app_page_title">
             <?php
 
-            if (!empty($page_header_title))
-            {
+            if (!empty($page_header_title)) {
                 include_once '_btn_back.php';
             }
 
             if (isset($b_page_logo) && $b_page_logo) : 
         
-            ?><h1><strong><?php echo costant::app_name() ?></strong></h1>
-            <img src="res/mmex.png" alt="Money Manager Ex Logo" height="150" width="150"/><?php
+                ?><h1><strong><?php echo costant::app_name() ?></strong></h1>
+            <img src="res/mmex.png" alt="Gonzales Bread House Logo" height="150" width="150"/><?php
             
             endif; 
 
             if (!empty($page_header_title)) :
 
-            ?><h2><strong><?php echo $page_header_title; ?></strong></h2><?php
+                ?><h2><strong><?php echo $page_header_title; ?></strong></h2><?php
 
             endif; 
 
