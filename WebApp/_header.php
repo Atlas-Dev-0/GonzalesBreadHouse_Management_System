@@ -20,14 +20,13 @@ if ($b_debug) {
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="MMEX">
         <meta name="apple-mobile-web-app-capable" content="yes" />
-
+    
         <title><?php 
             echo various::getPageTitle($s_page_title)
         ?></title>
 
         <link rel="icon" href="res/favicon.ico" />
         <link rel="apple-touch-icon" href="res/mmex.png" />
-
         <link rel="stylesheet" type="text/css" href="res/bootstrap-3.3.6.min.css<?php echo $s_debug; ?>" />
         <link rel="stylesheet" type="text/css" href="res/bootstrap-theme-3.3.6.min.css<?php echo $s_debug; ?>" />
         <link rel="stylesheet" type="text/css" href="res/style_global-1.2.1.css<?php echo $s_debug; ?>" />

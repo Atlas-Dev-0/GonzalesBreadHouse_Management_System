@@ -13,8 +13,23 @@ $pages_list = various::getPagesList();
 <?php
 foreach ($pages_list AS $page_url => $page_name):
     ?>
+                <head>
+                <style>
+                        .btn-landing {
+            background-color: #7d6928 !important; /* Dark cream color */
+            color: #ffff !important; /* White text color */
+            border: none; /* Optional: Remove border if needed */
+        }
+
+        .btn-landing:hover {
+            background-color: #b8a74d !important; /* Lighter cream color on hover */
+            color: #fff !important; /* Ensure text remains white */
+                                        }
+                        </style>
+
+                </head>
             <div class="div_btn">
-                <a href="<?php echo $page_url ?>.php" class="btn btn-lg btn-success btn-block"><?php
+                <a href="<?php echo $page_url ?>.php" class="btn btn-lg btn-landing btn-block" style="font-weight: bold;"><?php
                 echo $page_name
                 ?></a>
             </div>
