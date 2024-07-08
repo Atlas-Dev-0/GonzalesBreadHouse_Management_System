@@ -1,6 +1,8 @@
 Gonzales Bread House Management System WebApp
 ===============================================
 
+![Gonzales Bread House](./WebApp/res/mmex.png)
+
 This is a fork from the original WebApp - Money Manager Ex, this will be used to handle the financial transaction for my bakery business so that I can easily transact with my co-owners in regards with the finances.
 
 ## Server-side requirements
