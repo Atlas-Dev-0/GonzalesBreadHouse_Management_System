@@ -12,7 +12,7 @@ require_once '_header.php';
     <h4> Gonzales Bread House Management System  -  by Kenneth Gonzales </h4>
    <h5>This is only A fork of web mmx to provide my personal business a way to access desktop version of mmx</h4> 
     <br />
-        <h4>Real Developers: </h4>
+        <h4>MMX Developers: </h4>
 
             <h5>
                 developer 2021<?php if (date("y") > 2021) { echo '&nbsp;&mdash;&nbsp' . date("y"); 
